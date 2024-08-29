@@ -22,6 +22,20 @@ function display() {
   }
 }
 
+function findLargestString() {
+  if (arr.length === 0) {
+      return "Array is empty";
+  } 
+  let largestString = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+      if (arr[i].length > largestString.length) {
+          largestString = arr[i];
+      }
+  }
+
+  output.innerHTML = `The largest string is "${largestString}" with a length of ${largestString.length}`;
+}
+
 function remove() {
   if (arr.length > 0) {
       const removed = arr.pop();
