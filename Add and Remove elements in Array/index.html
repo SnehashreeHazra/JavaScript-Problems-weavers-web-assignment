@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="entryarea">
+        <input type="text" id="input" required />
+        <div class="labelline">Enter month</div>
+      </div>
+      <div style="display: flex; justify-content: center">
+        <button onclick="add()" id="btn" class="button-33" role="button">
+          Add
+        </button>
+      </div>
+      <div class="box">
+        <button onclick="display()" class="button-33" role="button">
+          Display
+        </button>
+        <button onclick="remove()" class="button-33" role="button">
+          Remove Last
+        </button>
+      </div>
+      <div
+        id="output"
+        style="color: #66ff00; font-size: 2.2em; margin-top: 15px"
+      ></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
