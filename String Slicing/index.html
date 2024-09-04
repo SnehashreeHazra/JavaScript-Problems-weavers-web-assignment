@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        margin-top: 200px;
+        text-align: center;
+      }
+      .box {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+      input {
+        padding: 10px 100px;
+        text-align: left;
+      }
+      button {
+        padding: 0px 20px;
+        background-color: teal;
+        border: none;
+        color: antiquewhite;
+      }
+      #message {
+        text-align: center;
+        font-size: 30px;
+        color: darkgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Slice first 3 and last 3 character of a String and then join & Display
+    </h1>
+    <div class="box">
+      <input type="text" id="input" />
+      <button id="btn">Display</button>
+      <button onclick="reset()">Reset</button>
+    </div>
+    <p id="message"></p>
+    <script src="script.js"></script>
+  </body>
+</html>
