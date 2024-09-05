@@ -72,6 +72,15 @@ function hideErrorAndResetRadios() {
   });
 }
 
+function resetButton(){
+  document.getElementById('inp').value = "";
+  document.getElementById('output').value = "";
+  const radios = document.querySelectorAll('input[name="transform"]');
+  radios.forEach(radio => {
+      radio.checked = false;
+  });
+}
+
 
 
 // function convert() {
